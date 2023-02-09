@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOP SELLING</title>
+    <link rel="icon" type="icon/image" href="/project/logo.png" />
+    <link rel="stylesheet" href="/project/project.css">
+    <link rel="stylesheet" href="/project/project.js">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+     $(document).ready(function(){
+  $("#brand").click(function(){
+      $("#brandDetail").slideToggle();
+  });
+  $("#size").click(function(){
+      $("#sizeDetail").slideToggle();
+  });
+  $("#color").click(function(){
+      $("#colorDetail").slideToggle();
+  });
+  $("#search").on("keyup", function () {
+      var value = $(this).val().toLowerCase();
+      $("#product div ").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+  });
+  $("#Samsung , #iphone , #lg , #alcatel , #htc").click("keyup", function () {
+      var value = $(this).val().toLowerCase();
+      $("#product div ").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+  });
+  $("#large , #small , #medium").click("keyup", function () {
+      var value = $(this).val().toLowerCase();
+      $("#product div ").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+  });
+
+});  
+    </script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="nav">
+        <div class="container-fluid">
+          <a href=""><img src="/project/background/logo-web-project.png" alt=""></a>
+          <!-- <div class="spinner-border"></div> -->
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/project/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+              </li>
+            
+              <li class="nav-item dropdown ms-2">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 Category
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/project/apple.html">Apple</a></li>
+                    <li><a class="dropdown-item" href="/project/ALCATEL.HTML">Alcatel</a></li>
+                    <li><a class="dropdown-item" href="/project/BLACKBERRY.HTML">Blackberry</a></li>
+                    <li><a class="dropdown-item" href="/project/CAT.HTML">Cat</a></li>
+                    <li><a class="dropdown-item" href="/project/HTC.HTML">Htc</a></li>
+                  <li><a class="dropdown-item" href="/project/samsung.html">Samsung</a></li>
+                  <li><a class="dropdown-item" href="/project/SONY.HTML">Sony</a></li>
+                  <li><a class="dropdown-item" href="/project/MOTOROLLA.HTML">Motrolla</a></li>
+                  <li><a class="dropdown-item" href="/project/Nokia.html">Nokia</a></li>
+                  <li><a class="dropdown-item" href="/project/LG.Html">LG</a></li>
+                  <li><a class="dropdown-item" href="/project/HUAWEI.HTML">Huawei</a></li>
+                  <li><a class="dropdown-item" href="/project/XIAOMI.HTML">Xiaomi</a></li>
+                  <li><a class="dropdown-item" href="/project/ZTE.HTML">Zte</a></li>
+
+                </ul>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="/project/TOP_selling.html">Top Selling </a>
+              </li>
+               <li class="nav-item ms-2">
+                <a class="nav-link" href="/project/TOP_5_brand.html">Top 5 Brand </a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="/project/Best_budget.html">Best Budget</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="/project/cart.html">Purchase</a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="/project/Gallery.html">Gallery </a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="/project/login.html">Register / Login</a>
+              </li>
+              <li class="nav-item ms-2 ">
+                <a class="nav-link" href="/project/about.html">About <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-detailed-fill" viewBox="0 0 16 16">
+                    <path d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4 1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5Zm0 5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5ZM4 8a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2H5a1 1 0 0 0-1 1Z"/>
+                  </svg></a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="/project/CONTECT.HTML">Contact <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                  </svg></a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link" href="https://goo.gl/maps/6buZ6QAWCFo8TNHQ6">Location <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg></a>
+              </li>
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+ <h1 class=" text-center mt-3">Top Selling</h1>
+    <div class="container" id="div1">
+        <div class="row">
+            <div class="col-lg-2">
+                <form action="" class="mt-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text p-3"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search" id="search">
+                    </div>
+                </form>
+                <div class="row">
+                    <div class="col-lg-12 col-sm-4 mt-5">
+                        <h4 id="brand">Brands</h4>
+                        <hr>
+                        <form action="" id="brandDetail">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Samsung" value="Samsung">
+                                <label class="form-check-label">Samsung</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="alcatel" value="alcatel">
+                                <label class="form-check-label">Alcatel</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="iphone" value="iphone">
+                                <label class="form-check-label">iphone</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="lg" value="lg">
+                                <label class="form-check-label">LG</label>
+                            </div>
+                            <div class="form-check">
+                              <input type="checkbox" class="form-check-input" id="htc" value="htc">
+                              <label class="form-check-label">HTC</label>
+                          </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-12 col-sm-4 mt-5">
+                        <h4 id="size">Size</h4>
+                        <hr>
+                        <form action="" id="sizeDetail">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="large" value="large">
+                                <label class="form-check-label">Large</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="medium" value="medium">
+                                <label class="form-check-label">Medium</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="small" value="small">
+                                <label class="form-check-label">Small</label>
+                            </div>
+   
+                        </form>
+                    </div>
+                    <!-- <div class="col-lg-12 col-sm-4 mt-5">
+                        <h4 id="color">Color</h4>
+                        <hr>
+                        <form action="" class="d-flex" id="colorDetail">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input bg-danger">
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input bg-dark">
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input bg-info">
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input bg-primary">
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input bg-warning">
+                            </div>
+   
+                        </form>
+                    </div> -->
+                </div>
+             
+
+
+            </div>
+            <div class="col-lg-10 mt-3"  id="product">
+                <h5>Top Selling Products</h5>
+                <hr>
+                <div class="row gy-3 gx-2">
+                    <div class="col-lg-3">
+                        <div class="card" >
+                            <img src="/project/mobile brands/Alcatel/New folder/560x700-Prime-black-1.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-secondary">Alcatel Prime Black</h5>
+                              <p class="card-text">Medium</p>
+                              <p>$77</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pro">
+                               Detail
+                              </button>
+                              <span> <button class="btn btn-dark">Add To cart</button> </span>
+
+                            </div>
+                          </div>
+                          <div class="modal fade" id="pro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <img src="/project/modal picture/alctel/1st.png" alt="">
+                                <div class="modal-header">
+                                 
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <img src="/project/mobile brands/Apple/apple phone/7plus.png" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">iphone 7Plus</h5>
+                                <p>Medium</p>
+                                <p>$430</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#iphone7">
+                                    Detail
+                                   </button>
+                                   <span> <button class="btn btn-dark">Add To cart</button> </span>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="iphone7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <img src="/project/modal picture/7.jpg" alt="">
+                            <div class="modal-header">
+                           
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col-lg-3">
+                        <div class="card" >
+                            <img src="/project/mobile brands/lg/g7.png" class="card-img-top img-fluid" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title text-secondary">Lg G7</h5>
+                                <p>Large</p>
+                                <p>$249</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#g7">
+                                 Detail
+                                </button>
+                                <span> <button class="btn btn-dark">Add To cart</button> </span>
+
+                              </div>
+                            </div>
+                        
+                    </div>
+
+                    <div class="modal fade" id="g7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <img src="https://www.unlockbase.com/blog/wp-content/LG-G7-ThinQ-specifications.jpg" alt="">
+                            <div class="modal-header">
+                           
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col-lg-3">
+                        <div class="card" >
+                            <img src="/project/mobile brands/samsung/New folder/note9.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Samsung Note 9</h5>
+                                <p>Large</p>
+                                <p>$399.99</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#note">
+                               Detail
+                              </button>
+                              <span> <button class="btn btn-dark">Add To cart</button> </span>
+
+                            </div>
+                          </div>
+                    </div>
+                    <div class="modal fade" id="note" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <img src="https://cdn.ttgtmedia.com/rms/onlineImages/samsung_galaxy_note9.png" alt="">
+                            <div class="modal-header">
+                           
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="col-lg-3">
+                        <div class="card" >
+                            <img src="/project/mobile brands/htc/black10.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-dark">HTC Black 10</h5>
+                              <p>Medium</p>
+                              <p class="card-text">$179.00</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#st">
+                               Detail
+                              </button>
+                              <span>
+                                <button class="btn btn-dark">Add To cart</button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="modal fade" id="st" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <img src="http://cdn-files.kimovil.com/screenshot/0007/75/thumb_674376_screenshot_big.png" alt="">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                             
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                      
+                         
+                        <div class="col-lg-3">
+                          <div class="card"  >
+                            <img src="/project/mobile brands/htc/Desire-10-Pro-D10i.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-dark">HTC Desire 10 Pro</h5>
+                              <p>Medium</p>
+                              <p class="card-text">$229.00</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pro10">
+                                Detail
+                               </button>
+                               <span>
+                                <button class="btn btn-dark">Add To cart</button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="modal fade" id="pro10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <img src="http://cdn-files.kimovil.com/screenshot/0004/01/thumb_300781_screenshot_big.png" alt="">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                             
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                          
+                      
+                        <div class="col-lg-3">
+                          <div class="card" >
+                            <img src="/project/mobile brands/htc/HTC-One-(M8).png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-dark">HTC One-(M8)</h5>
+                              <p>Small</p>
+                              <p class="card-text">$141.32</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#M8">
+                                Detail
+                               </button>
+                               <span>
+                                <button class="btn btn-dark">Add To cart</button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="modal fade" id="M8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <img src="https://techotv.com/products/release/htc-one-m8-specification.jpg" alt="">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                             
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                          
+                      
+                        <div class="col-lg-3">
+                          <div class="card">
+                            <img src="/project/mobile brands/htc/HTC-One-M9.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-dark">HTC One M9</h5>
+                              <p>Small</p>
+                              <p class="card-text ">$109.00</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m9">
+                                Detail
+                               </button>
+                               <span>
+                                <button class="btn btn-dark">Add To cart</button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <div class="modal fade" id="m9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <img src="https://hamariweb.com/mobiles/LargeImages/2507_01.jpg" alt="">
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                             
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+
+                        <div class="col-lg-3">
+                          <div class="card" >
+                            <img src="/project/mobile brands/lg/g5.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-dark">LG G5</h5>
+                              <p>Medium</p>
+                              <p class="card-text"> $600</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#g5">
+                                Detail
+                               </button>
+                              <span>
+                                <button class="btn btn-dark">Add To cart</button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="g5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <img src="https://4.bp.blogspot.com/-6ex2EQgZh6c/VvOs__2G7UI/AAAAAAAAGgA/IUvcFl_b278q-ZjYLLetfL1tkkMrt-x1Q/s1600/newsss.png" alt="">
+                              <div class="modal-header">
+                               
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                          
+                      
+                        <div class="col-lg-3">
+                          <div class="card">
+                            <img src="/project/mobile brands/lg/g6.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title text-dark">LG G6</h5>
+                              <p>Large</p>
+                              <p class="card-text ">$650.</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#g6">
+                                Detail
+                               </button>
+                              <span>
+                                <button class="btn btn-dark">Add To cart</button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="modal fade" id="g6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <img src="https://nemusa.com/Pic/images/products/SPR11-LGG6-1.JPG" alt="">
+                              <div class="modal-header">
+                               
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                          <div class="card">
+                            <img src="/project/mobile brands/samsung/New folder/s6.png" class="card-img-top img-fluid" alt="..." />
+                            <div class="card-body">
+                              <h5 class="card-title text-dark">Samsung S23</h5>
+                              <p>Large</p>
+                              <p class="card-text">$1350</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#s">
+                                Detail
+                              </button>
+                              <span>
+                                <button class="btn btn-dark">Add To cart</button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="modal fade" id="s" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <img
+                                src="https://www.whatmobile.com.pk/control/news/assets/10082022/d4abf6398aa9c0fc037636ba2938c919.jpg"
+                                alt="" />
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body"></div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                  Close
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-lg-3">
+                          <div class="card">
+                            <img src="/project/mobile brands/samsung/New folder/s20ultra.png" class="card-img-top img-fluid"
+                              alt="..." />
+                            <div class="card-body">
+                              <h5 class="card-title text-dark">Samsung S20</h5>
+                              <p>Large</p>
+                              <p class="card-text">$979</p>
+                              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#s20">
+                                Detail
+                              </button>
+                              <span>
+                                <button class="btn btn-dark">Add To cart</button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="modal fade" id="s20" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <img
+                                src="https://m-cdn.phonearena.com/images/article/121473-wide-two_1200/Galaxy-S20-vs-Plus-vs-S20-Ultra-specs-camera-and-price-comparison.jpg"
+                                alt="" />
+                              <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body"></div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                  Close
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-lg-3">
+                          <div class="card" >
+                            <img src="/project/mobile brands/Alcatel/New folder/Alcatel-1S-2021_513x599-1.png" class="card-img-top img-fluid" alt="...">
+                  
+                              <div class="card-body">
+                                <h5 class="card-title text-dark">Alcatel 1S</h5>
+                                <p>Medium</p>
+                                <p class="card-text">$150</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#s">
+                                  Detail
+                                 </button>
+                                 <span>
+                                  <button class="btn btn-dark">Add To cart</button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal fade" id="s" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <img src="https://www.alcatelmobile.com/wp-content/uploads/2021/01/Alcatel-1S-2021_Desktop-comp-7.png" alt="">
+                                <div class="modal-header">
+                                 
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                        
+                        
+                           
+                          <div class="col-lg-3">
+                            <div class="card"  >
+                              <img src="/project/mobile brands/Alcatel/New folder/Alcatel-1x-2019.png" class="card-img-top img-fluid" alt="...">
+                  
+                              <div class="card-body">
+                                <h5 class="card-title text-dark">Alcatel 1X</h5>
+                                <p>Medium</p>
+                                <p class="card-text">$119</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#x">
+                                  Detail
+                                 </button>
+                                 <span>
+                                  <button class="btn btn-dark">Add To cart</button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        
+                          <div class="modal fade" id="x" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <img src="https://www.gizmochina.com/wp-content/uploads/2018/05/Alcatel-1X-with-Android-Go.jpg" alt="">
+                                <div class="modal-header">
+                                 
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+      
+                          <div class="col-lg-3">
+                            <div class="card"  >
+                              <img src="/project/mobile brands/Apple/apple phone/12pro.png" class="card-img-top  img-fluid" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title text-dark">Iphone 12pro</h5>
+                                <p>Medium</p>
+                                <p class="card-text">$1,199.00</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#12pro">Detail
+                                </button>
+                                <span>
+                                  <button class="btn btn-dark">Add To cart</button>
+                                </span>
+                  
+                              </div>
+                            </div>
+                          </div>
+                        
+                        
+                          <div class="modal fade" id="12pro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <img src="/project/modal picture/12pro.jpg" alt="">
+                                <div class="modal-header">
+                                 
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                   
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                            
+                        
+                          <div class="col-lg-3">
+                            <div class="card" >
+                              <img src="/project/mobile brands/Apple/apple phone/13rpo.png" class="card-img-top  img-fluid" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title text-dark">Iphone 13pro</h5>
+                                <p>Medium</p>
+                                <p class="card-text"> $ 1,299</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#13pro">Detail
+                                </button>
+                                <span>
+                                  <button class="btn btn-dark">Add To cart</button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal fade" id="13pro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <img src="/project/modal picture/iPhone-13-specs.jpg" alt="">
+                                <div class="modal-header">
+                                
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                            
+                        
+                          <div class="col-lg-3">
+                            <div class="card">
+                              <img src="/project/mobile brands/Apple/apple phone/card-size.png" class="card-img-top  img-fluid" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title text-dark">Iphone 6plus</h5>
+                                <p>Medium</p>
+                                <p class="card-text ">$377</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#6plus">Detail
+                                </button>
+                                <span>
+                                  <button class="btn btn-dark">Add To cart</button>
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        
+                          <div class="modal fade" id="6plus" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <img src="/project/modal picture/6plus.jpg" alt="">
+                                <div class="modal-header">
+                             
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+                        </div>
+                      
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+<div class="row mb-5"></div>
+<footer class="footer">
+  <div  id="cont">
+    <div  id="row">
+      <div class="footer-col">
+        <h4>Wireless World</h4>
+        <ul >
+         <li >
+           <a class="nav-link" href="/project/about.html">About <svg xmlns="http://www.w3.org/2000/svg" width="16"
+               height="16" fill="currentColor" class="bi bi-ticket-detailed-fill" viewBox="0 0 16 16">
+               <path
+                 d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5Zm4 1a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5Zm0 5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7a.5.5 0 0 0-.5.5ZM4 8a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2H5a1 1 0 0 0-1 1Z" />
+             </svg></a>
+         </li>
+         <li >
+           <a class="nav-link" href="/project/CONTECT.HTML">Contact <svg xmlns="http://www.w3.org/2000/svg" width="16"
+               height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+               <path fill-rule="evenodd"
+                 d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+             </svg></a>
+         </li>
+         <li >
+           <a class="nav-link" href="https://goo.gl/maps/6buZ6QAWCFo8TNHQ6">Location <svg
+               xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill"
+               viewBox="0 0 16 16">
+               <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+             </svg></a>
+         </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Best Sell</h4>
+        <ul >
+         <li>
+           <a class="nav-link" href="/project/TOP_selling.html">Top Selling </a>
+         </li>
+         <li >
+           <a class="nav-link" href="/project/TOP_5_brand.html">Top 5 Brand </a>
+         </li>
+         <li >
+           <a class="nav-link" href="/project/Best_budget.html">Best Budget Phone</a>
+         </li>
+         
+        
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul >
+         <li>
+           <a class="nav-link" href="/project/cart.html">Purchase</a>
+         </li>
+         <li><a  href="/project/apple.html">Apple</a></li>
+         <li><a  href="/project/ALCATEL.HTML">Alcatel</a></li>
+         <li><a  href="/project/BLACKBERRY.HTML">Blackberry</a></li>
+         <li><a  href="/project/CAT.HTML">Cat</a></li>
+         <li><a  href="/project/HTC.HTML">Htc</a></li>
+         
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fas fa-envelope"></i>smubashir493@gmail.com</a>
+         
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+<p class="text-center">&copy; Copyright Wireless-World</p>
+
+</body>
+
+</html>
